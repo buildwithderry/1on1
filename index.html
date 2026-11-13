@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://1on1.derry.my.id/">
 <meta property="og:locale" content="id_ID">
 <meta property="og:title" content="Sesi 1 on 1 — Harga Sale Rp399.000">
-<meta property="og:description" content="Bahas masalahmu langsung, satu lawan satu. Harga sale Rp399.000 dari Rp699.000.">
+<meta property="og:description" content="Bahas masalahmu pada sesi 1-on-1 sekarang juga. Harga sale Rp399.000 dari Rp699.000.">
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -166,6 +166,9 @@ dialog::backdrop{background:rgba(29,27,23,.6)}
 .x:hover{background:var(--paper-2)}
 
 footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
+.social{display:flex;flex-wrap:wrap;gap:20px;margin:0}
+.social a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none;font-weight:500}
+.social a:hover{color:var(--ink)}
 .toast{
   position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);
   background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:var(--radius);font-weight:500;font-size:15px;
@@ -182,13 +185,16 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
   .hero{padding:72px 0 80px}
   .hero .wrap{grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
   section{padding:80px 0}
-  .steps{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
   .steps li{padding:76px 18px 20px}
   .steps li::before{top:18px}
   .points{grid-template-columns:repeat(3,1fr);border-top:0;gap:24px}
   .points div{border:2px solid var(--line);border-radius:var(--radius);padding:20px;background:var(--paper)}
   .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
   .formcard{margin-top:0}
+}
+@media (min-width:1000px){
+  .steps{grid-template-columns:repeat(5,1fr)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -214,8 +220,8 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
     <div class="wrap">
       <div>
         <p class="eyebrow">Sesi 1 on 1</p>
-        <h1 id="judul">Bahas masalahmu <em>langsung</em>, satu lawan satu.</h1>
-        <p class="lead">Tidak ada kelas ramai atau materi yang dibacakan. Kamu cerita, lalu kita cari jalan keluarnya bersama.</p>
+        <h1 id="judul">Bahas masalahmu pada sesi 1-on-1 <em>sekarang juga</em>.</h1>
+        <p class="lead">Private room, utarakan kebutuhan saat ini, kami bantu carikan solusinya.</p>
       </div>
 
       <aside class="price" aria-label="Harga sesi">
@@ -236,26 +242,33 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
         </div>
 
         <button class="btn btn-block" type="button" data-open-dialog>Booking sekarang</button>
-        <p class="fine">Isi nama dan nomor HP, lalu kamu langsung diarahkan ke WhatsApp.</p>
       </aside>
     </div>
   </section>
 
   <section class="alt" aria-labelledby="alur">
     <div class="wrap">
-      <h2 id="alur" class="rv">Begini jalannya</h2>
+      <h2 id="alur" class="rv">Alur pendaftaran sesi 1-on-1</h2>
       <ol class="steps">
         <li class="rv">
-          <h3>Isi nama dan nomor HP</h3>
-          <p>Cuma dua kolom. Datamu langsung tercatat di kami.</p>
+          <h3>Isi Data Diri</h3>
+          <p>Isi data diri kamu, agar kami dapat menghubungimu.</p>
         </li>
         <li class="rv">
           <h3>Lanjut di WhatsApp</h3>
-          <p>WhatsApp terbuka otomatis. Kami balas di sana untuk menyepakati jadwal.</p>
+          <p>Detailkan kebutuhanmu di WhatsApp.</p>
         </li>
         <li class="rv">
-          <h3>Sesi dimulai</h3>
-          <p>Satu orang, satu waktu. Fokusnya ke kebutuhanmu, bukan ke slide.</p>
+          <h3>Booking Jadwal</h3>
+          <p>Book jadwal sesi 1-on-1.</p>
+        </li>
+        <li class="rv">
+          <h3>Pembayaran</h3>
+          <p>Lakukan pembayaran untuk mengunci investasimu.</p>
+        </li>
+        <li class="rv">
+          <h3>Sesi 1-on-1 Dimulai</h3>
+          <p>Sesi 1-on-1 dimulai.</p>
         </li>
       </ol>
     </div>
@@ -263,8 +276,8 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
 
   <section aria-labelledby="beda">
     <div class="wrap">
-      <h2 id="beda" class="rv">Yang dibahas mengikuti kamu</h2>
-      <p class="sec-sub rv">Sesi 1 on 1 itu soal ritme dan konteksmu sendiri. Tiga hal ini yang kami jaga.</p>
+      <h2 id="beda" class="rv">Apa yang dapat dibahas?</h2>
+      <p class="sec-sub rv">Bukan 1 arah, melainkan diskusi dan bagaimana cara mendapatkan solusinya.</p>
       <div class="points">
         <div class="rv">
           <h3>Tanya langsung</h3>
@@ -272,7 +285,7 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
         </div>
         <div class="rv">
           <h3>Sesuai situasimu</h3>
-          <p>Contoh dan saran diambil dari kasusmu, bukan kasus umum yang belum tentu cocok.</p>
+          <p>Berdasarkan kondisi yang kamu hadapi, bukan sekadar pemberian materi 1 arah saja.</p>
         </div>
         <div class="rv">
           <h3>Jadwal disepakati</h3>
@@ -287,7 +300,6 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
       <div>
         <h2 id="formjudul" class="rv">Belum yakin mau bahas apa?</h2>
         <p class="sec-sub rv">Ceritakan saja kebutuhanmu. Tidak perlu rapi atau lengkap, nanti kita rapikan bareng di sesi.</p>
-        <p class="sec-sub rv">Harga sale tetap berlaku selama hitungan mundur di atas masih berjalan.</p>
       </div>
 
       <form class="formcard rv" id="leadForm" novalidate>
@@ -319,7 +331,7 @@ footer{padding:28px 0 40px;font-size:14px;color:var(--ink-soft)}
 
 <footer>
   <div class="wrap">
-    <p>Pendaftaran dan penjadwalan dilakukan lewat WhatsApp.</p>
+    <p class="social"><a href="https://www.instagram.com/derryyyderajat" target="_blank" rel="noopener" aria-label="Instagram @derryyyderajat"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@derryyyderajat</span></a><a href="https://www.threads.com/@derryyyderajat" target="_blank" rel="noopener" aria-label="Threads @derryyyderajat"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 9.5C16.8 6.6 14.8 5 12 5 8.5 5 6.5 7.6 6.5 12s2 7 5.5 7c2.9 0 4.8-1.5 4.8-3.7 0-2.3-1.9-3.3-4.3-3.3-1.7 0-2.8.7-2.8 1.8 0 1 .8 1.6 2 1.6 1.9 0 3-1.2 3-3.9"/></svg><span>@derryyyderajat</span></a></p>
   </div>
 </footer>
 
