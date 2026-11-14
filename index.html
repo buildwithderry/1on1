@@ -6,6 +6,8 @@
 <title>Sesi 1-on-1 AI &amp; Teknologi bersama Derry Derajat</title>
 <meta name="description" content="Konsultasi dan mentoring privat bersama Derry Derajat: belajar AI sesuai kebutuhanmu, atau bedah masalah teknologi dan dapatkan rekomendasi solusinya.">
 <meta name="theme-color" content="#EEF2FA">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://1on1.derry.my.id/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://1on1.derry.my.id/">
@@ -68,7 +70,7 @@ h1{font-size:clamp(33px,8.2vw,56px);font-weight:800;max-width:17ch}
 .hero-cta .btn{min-width:210px}
 
 .who{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;max-width:380px}
-.who img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border-radius:14px}
+.who img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border-radius:14px}
 .who-cap{padding:14px 6px 4px}
 .who-cap b{display:block;font-size:19px;font-weight:800}
 .who-cap span{display:block;font-size:14px;color:var(--ink-soft);line-height:1.45;margin-top:2px}
@@ -104,9 +106,9 @@ h2{font-size:clamp(27px,6.4vw,40px);font-weight:800;max-width:22ch}
 .profile{display:grid;gap:30px;margin-top:30px}
 .profile p{margin:0 0 14px;color:var(--ink-soft);max-width:58ch}
 .profile p b{color:var(--ink)}
+.profile-photo img{width:100%;height:auto;max-width:340px;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border-radius:22px;border:1px solid var(--line)}
 .pill-list{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
 .pill-list li{background:var(--ground);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600}
-.profile-photo img{width:100%;max-width:340px;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border-radius:22px;border:1px solid var(--line)}
 
 /* pilihan layanan */
 .services{margin-top:30px;display:grid;gap:18px}
@@ -198,7 +200,6 @@ footer .name{margin:0 0 14px}
 @media (min-width:860px){
   :root{--gutter:32px}
   .hero{padding:72px 0 88px}
-  .hero .wrap{grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
   section{padding:88px 0}
   .profile{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
   .services,.grid2{grid-template-columns:1fr 1fr}
@@ -236,13 +237,6 @@ footer .name{margin:0 0 14px}
           <a class="btn btn-ghost" href="#layanan">Lihat pilihan sesi</a>
         </div>
       </div>
-      <figure class="who" style="margin:0">
-        <img src="derry.webp" width="800" height="800" alt="Foto Derry Derajat, konsultan sesi 1-on-1" fetchpriority="high">
-        <figcaption class="who-cap">
-          <b>Derry Derajat</b>
-          <span>QA Engineer &amp; Founder Recehin. Membangun tools keuangan pribadi berbasis AI.</span>
-        </figcaption>
-      </figure>
     </div>
   </section>
 
@@ -314,23 +308,22 @@ footer .name{margin:0 0 14px}
   <section class="alt" aria-labelledby="dapat">
     <div class="wrap">
       <h2 id="dapat">Apa yang kamu bawa pulang</h2>
-      <p class="sec-sub">Supaya tidak ada salah ekspektasi, ini yang termasuk dan yang tidak termasuk dalam satu sesi.</p>
       <div class="grid2">
         <div class="box yes">
-          <h3>Termasuk dalam sesi</h3>
+          <h3>Termasuk dalam paket</h3>
           <ul>
-            <li><b>Satu sesi privat</b> yang membahas kebutuhanmu, bukan materi umum.</li>
+            <li><b>3 sesi privat</b> yang membahas kebutuhanmu, bukan materi umum.</li>
             <li><b>Satu kasus dibedah bersama</b>, dari situasi nyata yang kamu hadapi.</li>
-            <li><b>Rekomendasi tools atau pendekatan</b> yang sesuai konteksmu.</li>
             <li><b>Langkah lanjut yang jelas</b> untuk dikerjakan setelah sesi.</li>
           </ul>
         </div>
         <div class="box no">
           <h3>Belum termasuk</h3>
           <ul>
-            <li>Membangun aplikasi, AI Agent, atau sistem bisnis secara utuh.</li>
-            <li>Menjamin satu sesi menyelesaikan semua masalah.</li>
-            <li>Pekerjaan implementasi. Kalau dibutuhkan, itu proyek terpisah yang kita bahas dan sepakati sendiri.</li>
+            <li>Layanan berlangganan pada aplikasi.</li>
+            <li>Penyelesaian masalah memiliki banyak faktor, seperti penjabaran masalah secara detail dan keaktifan peserta.</li>
+            <li>Implementasi pada company. Tahap ini membutuhkan tahap lanjutan.</li>
+            <li>Hanya diberikan tools. Saya percaya bahwa memberi seseorang alat pancing lebih berguna daripada memberi ikan secara langsung untuk berkelanjutan.</li>
           </ul>
         </div>
       </div>
@@ -393,8 +386,9 @@ footer .name{margin:0 0 14px}
           </div>
           <div class="old"><span class="sr">Harga normal </span>Rp699.000</div>
           <div class="now"><span>Rp</span>399.000</div>
+          <p style="margin:6px 0 0;font-size:15px;font-weight:600;color:var(--mint)">untuk 3 sesi</p>
           <ul>
-            <li>Satu sesi privat 1-on-1</li>
+            <li>3 sesi privat 1-on-1</li>
             <li>Berlaku untuk Mentoring maupun Consulting</li>
           </ul>
           <div class="clock" role="timer" aria-label="Sisa waktu harga sale">
@@ -456,7 +450,7 @@ footer .name{margin:0 0 14px}
           <p>Cocok. Sesi dimulai dari situasi dan tingkat pemahamanmu, jadi tidak perlu paham teknis lebih dulu.</p>
         </details>
         <details>
-          <summary>Apakah Anda akan membangunkan aplikasi atau AI Agent saya?</summary>
+          <summary>Apakah kamu akan membangunkan aplikasi atau AI Agent saya?</summary>
           <p>Sesi ini untuk konsultasi dan pendampingan, bukan pekerjaan implementasi. Kalau dari hasil sesi kamu butuh sesuatu dibangun, itu dibahas sebagai proyek terpisah dengan ruang lingkup dan kesepakatan sendiri.</p>
         </details>
         <details>
